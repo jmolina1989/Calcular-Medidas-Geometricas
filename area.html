@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./area.css" />
+    <title>CALCULAR MEDIDAS GEOMETRICAS</title>
+  </head>
+  <body>
+    <header>
+      <h1>CALCULAR MEDIDAS GEOMETRICAS</h1>
+    </header>
+    <nav>
+      <!-- <ol>
+        <li><a href="">CUADRADO</a></li>
+        <li><a href="">RECTANGULO</a></li>
+        <li><a href="">TRIANGULO</a></li>
+        <li><a href="">CIRCULO</a></li>
+      </ol> -->
+    </nav>
+    <div>
+      <section id="first">
+        <h2>Cuadrado</h2>
+        <p>Ingrese datos solicitados del cuadrado</p>
+        <form action="">
+          <label for="inputCuadrado"> Lado: </label>
+          <input type="number" id="inputCuadrado" placeholder="Lado en cms" />
+          <br /><br />
+          <button type="button" onclick="perimetroCuadrado()">
+            Calcular Perimetro
+          </button>
+          <button type="button" onclick="areaCuadrado()">Calcular Area</button
+          ><br />
+        </form>
+        <p id="resultadoCuadrado"></p>
+      </section>
+      <section>
+        <h2>Rectangulo</h2>
+        <form action="">
+          <p>Ingrese datos solicitados del rectangulo</p>
+          <label for="inputBaseRectangulo"> Base: </label>
+          <input
+            type="number"
+            id="inputBaseRectangulo"
+            placeholder="Base en cms"
+          />
+          <br /><br />
+          <label for="inputAlturaRectangulo"> Altura: </label>
+          <input
+            type="number"
+            id="inputAlturaRectangulo"
+            placeholder="Altura en cms"
+          />
+          <br /><br />
+          <button type="button" onclick="perimetroRectangulo()">
+            Calcular Perimetro
+          </button>
+          <button type="button" onclick="areaRectangulo()">Calcular Area</button
+          ><br />
+        </form>
+        <p id="resultadoRectangulo"></p>
+      </section>
+      <section>
+        <h2>Triangulo</h2>
+        <form action="">
+          <p>Ingrese datos solicitados del triangulo</p>
+          <label for="inputBaseTriangulo"> Base: </label>
+          <input
+            type="number"
+            id="inputBaseTriangulo"
+            placeholder="Base en cms"
+          />
+          <br /><br />
+          <label for="inputLado1Triangulo"> Lado 1: </label>
+          <input
+            type="number"
+            id="inputLado1Triangulo"
+            placeholder="Base en cms"
+          />
+          <br /><br />
+          <label for="inputLado2Triangulo"> Lado 2: </label>
+          <input
+            type="number"
+            id="inputLado2Triangulo"
+            placeholder="Base en cms"
+          />
+          <br /><br />
+          <label for="inputAlturaTriangulo"> Altura: </label>
+          <input
+            type="number"
+            id="inputAlturaTriangulo"
+            placeholder="Altura en cms"
+          />
+          <br /><br />
+          <button type="button" onclick="perimetroTriangulo()">
+            Calcular Perimetro
+          </button>
+          <button type="button" onclick="areaTriangulo()">Calcular Area</button
+          ><br />
+        </form>
+        <p id="resultadoTriangulo"></p>
+      </section>
+      <section>
+        <h2>Circulo</h2>
+        <p>Ingrese datos solicitados del circulo</p>
+        <form action="">
+          <label for="inputCirculo"> Radio: </label>
+          <input type="number" id="inputCirculo" placeholder="Radio en cms" />
+          <br /><br />
+          <button type="button" onclick="circunferenciaCirculo()">
+            Calcular Circunferencia
+          </button>
+          <button type="button" onclick="areaCirculo()">Calcular Area</button
+          ><br />
+        </form>
+        <p id="resultadoCirculo"></p>
+      </section>
+    </div>
+    <script src="./areas.js"></script>
+  </body>
+</html>
