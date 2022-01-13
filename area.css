@@ -13,7 +13,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    min-width: 100vw;
     height: 20vh;
     background-color: lightcoral;
     display: flex;
@@ -22,9 +22,8 @@ header {
 }
 main {
     width: 100vw;
-    height: 50vh;
+    /* height: 50vh; */
     padding: 50px 200px;
-    /* background-color:gray; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -34,12 +33,10 @@ main {
 
 section {
     min-width: 30rem;
-    height: 30rem;
     background-color: white;
-    min-height: 30rem;
-    /* border: 1px dotted black; */
+    min-height: 33rem;
     padding: 1.5rem;
-    margin-top: 5rem;
+    margin: 2rem 0rem;
     box-shadow: 0rem 1rem 4rem rgba(3, 19, 23, 0.25);
     display: flex;
     flex-direction: column;
@@ -59,5 +56,12 @@ h2, p {
 button {
     text-align: center;
     background-color: lightblue;
-    /* color: white; */
+}
+
+button:hover {
+    background-color: lightgreen;
+}
+
+button:active {
+    background-color: lightyellow;
 }
